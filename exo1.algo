@@ -1,0 +1,32 @@
+ALGORITHM read_sentence
+VAR
+    str1: STRING
+    NombreMot, i, j, voyelle: INTEGER
+BEGIN
+    Write("Give the sentence");
+    Read(str1);
+    NombreMot := 0;
+    //parcourt de la phrase et lecture pour compter le nombre de mot
+    FOR i FROM 1 TO str1 STEP step  DO
+        IF (str1, i, 1 = []) THEN
+            NombreMot := NombreMot + 1;
+        END_IF
+        I++;
+        Write("These sentence have", NombreMot + 1, "Words");
+    END_FOR
+
+    //détection du nombre de voyelle contenue dans la phrase
+    voyelle:= 0;
+
+    FOR j FROM 1 TO str1.length STEP step  DO
+        SWITCH (str1) DO
+            case str1[j] : 
+                IF("a" OR "e" OR "i" OR "u" OR "o" OR "y") THEN
+                    voyelle := voyelle + 1;
+                END_IF
+            break;
+            default : "No voyel found it"
+        END_SWITCH
+    END_FOR
+END
+    
