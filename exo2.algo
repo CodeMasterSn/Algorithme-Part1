@@ -1,0 +1,30 @@
+ALGORITHM sum_of_elements
+VAR
+    tab1, tab2 : ARRAY_OF type[n];
+    i, j, nbr, elt : INTEGER;
+    sum := 0 : INTEGER;
+BEGIN
+    //create table and insert elt
+    FOR i FROM 0 TO n DO
+        READ(tab1[i]);
+        WRITE ("Give the elements to insert");
+        READ (tab1);
+    END_FOR
+
+    FOR j FROM 0 TO n DO
+        READ(tab2[j]);
+        WRITE ("Give the elements to insert");
+        READ (tab2);
+    END_FOR
+
+    //compare elt in table and do sum operation
+    FOR i FROM 0 TO n DO
+        IF((tab1[i].elt) = (tab2[j].elt)) THEN
+            sum := elt + 1;
+        ELSE
+            WRITE("No same elements found it");
+        END_IF
+    END_FOR
+
+
+END
